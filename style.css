@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@500;600&display=swap');
+
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background: hsl(210, 46%, 95%);
+  padding: 2rem;
+  color: hsl(219, 29%, 14%);
+}
+
+#blocos {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Layout desktop */
+@media (min-width: 1024px) {
+  #blocos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+
+  .blocoindividual1 { grid-area: daniel; }
+  .blocoindividual2 { grid-area: jonathan; }
+  .blocoindividual3 { grid-area: kira; }
+  .blocoindividual4 { grid-area: jeanette; }
+  .blocoindividual5 { grid-area: patrick; }
+}
+
+/* Cartões */
+article {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blocoindividual1 {
+  background: hsl(263, 55%, 52%);
+  color: white;
+}
+
+.blocoindividual2 {
+  background: hsl(217, 19%, 35%);
+  color: white;
+}
+
+.blocoindividual3 {
+  background: white;
+  color: hsl(219, 29%, 14%);
+}
+
+.blocoindividual4 {
+  background: white;
+  color: hsl(219, 29%, 14%);
+}
+
+.blocoindividual5 {
+  background: hsl(219, 29%, 14%);
+  color: white;
+}
+
+.foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.titulo {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.texto h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.texto {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Espaço entre imagem e título/texto */
+article img {
+  float: left;
+  margin-right: 1rem;
+}
